@@ -104,7 +104,32 @@ body{
     width: 990px;
     height: 360px;
     margin: 0 auto;
-    background: #3c6b99;
+    background: #4fb8f8;
+}
+
+.banner-inner img{
+    width: 990px;
+    margin-top: 28px;
+}
+
+.banner-inner ul{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -50px;
+}
+
+.banner-inner ul >li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    margin: 0 50px;
+    position: relative;
+    left: 325px;
+}
+.banner-inner ul >li:hover{
+    cursor: pointer;
 }
 
 .introduction-wrapper{
