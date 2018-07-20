@@ -82,6 +82,7 @@ body{
     min-height: 0px;
     overflow: auto;
     padding-top: 14px;
+    position: relative;
 }
 
 .choose-menu > ul{
@@ -117,7 +118,12 @@ body{
 
 .banner-inner ul{
     display: flex;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
     align-items: center;
+    position: relative;
+    top: -55px;
 }
 .banner-inner ul:hover{
     cursor: pointer;
