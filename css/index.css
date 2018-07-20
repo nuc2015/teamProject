@@ -4,6 +4,9 @@
     list-style: none;
     font-family: "微软雅黑";
 }
+a{
+    text-decoration: none;
+}
 body{
     background: url("../image/地球.png");
 }
@@ -40,7 +43,7 @@ body{
 
 .top-nav > ul >li{
     height: 130px;
-    width: 85px;
+    width: 95px;
     text-align: center;
     color: white;
     padding-top: 35px;
@@ -66,16 +69,15 @@ body{
 }
 
 .choose-menu{
-    position: relative;
-    top: 20px;
     background: #17181f;
+    /*background: white;*/
     opacity:0.95;
     display: none;
     z-index: 1000;
     float: left;
-    min-width: 85px;
     min-height: 0px;
     overflow: auto;
+    padding-top: 20px;
 }
 
 .choose-menu > ul{

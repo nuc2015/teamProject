@@ -7,14 +7,11 @@
         $(this).find(".choose-menu").css({
             display: "block"
         });
-        // $(".choose-menu").css({
-        //    display: "block"
-        // });
         if (this.className=="first_page"){
             $(".first_page img").attr('src','image/首页2.png');
-            $(".choose-menu").append("<ul>\n" +
-                "            <li>选项</li>\n" +
-                "        </ul>");
+            // $(".choose-menu").append("<ul>\n" +
+            //     "            <li>选项</li>\n" +
+            //     "        </ul>");
         }
         if (this.className=="free_server"){
             $(".free_server img").attr('src','image/免费服务2.png');
@@ -26,10 +23,12 @@
         if (this.className=="value_add_server"){
             $(".value_add_server img").attr('src','image/增值服务2.png');
             $(".choose-menu").append("<ul>\n" +
-                "            <li>选项</li>\n" +
-                "            <li>选项</li>\n" +
-                "            <li>选项</li>\n" +
+                "            <li><a href='#'>免费服务</a></li>\n" +
+                "            <li><a href='#'>收费服务</a></li>\n" +
                 "        </ul>");
+            $("a").css({
+                color: "white"
+            });
         }
         if (this.className=="campus_join"){
             $(".campus_join img").attr('src','image/安全招聘2.png');
@@ -76,7 +75,6 @@
             color: "white",
             background: "#17181f"
         });
-
         $(this).find("img").css({
             background: ""
         });
@@ -85,7 +83,7 @@
         });
         if (this.className=="first_page"){
             $(".first_page img").attr('src','image/首页.png');
-            $(".choose-menu").empty();
+            // $(".choose-menu").empty();
         }
         if (this.className=="free_server"){
             $(".free_server img").attr('src','image/免费服务.png');
